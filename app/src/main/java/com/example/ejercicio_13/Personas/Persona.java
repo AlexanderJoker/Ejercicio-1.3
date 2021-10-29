@@ -1,22 +1,25 @@
 package com.example.ejercicio_13.Personas;
 
 public class Persona {
-    String nombre,apellidos,correo,dirrecion;
-    int edad;
-    public Persona(String nombre,String apellidos,int edad,String correo,String dirreccion){
-     this.nombre=nombre;
-        this.apellidos=nombre;
-        this.correo=nombre;
+    String nombres,apellidos,correo,dirrecion;
+    int id,edad;
+    public Persona(int id,String nombres,String apellidos,int edad,String correo,String dirreccion){
+     this.id=id;
+        this.nombres=nombres;
+        this.apellidos=apellidos;
+        this.correo=correo;
         this.edad=edad;
         this.dirrecion=dirreccion;
     }
     public Persona(){}
 
-    public String getNombre() {
-        return nombre;
+    public int getId() {return id;}
+    public void setId(int id) { this.id = id;}
+    public String getNombres() {
+        return nombres;
     }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombres(String nombre) {
+        this.nombres = nombre;
     }
     public String getApellidos() {
         return apellidos;
