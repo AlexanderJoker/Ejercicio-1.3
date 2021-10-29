@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ejercicio13">
         <activity
+            android:name=".Actualizar"
+            android:exported="true" />
+        <activity
+            android:name=".VerLista"
+            android:exported="true" />
+        <activity
+            android:name=".Ingresar"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
