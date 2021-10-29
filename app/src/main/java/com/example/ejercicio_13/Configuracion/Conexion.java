@@ -23,5 +23,3 @@ public class Conexion extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 }
-
-
