@@ -24,21 +24,23 @@ Button agregar,actualizar,ver;
                 Intent intent = new Intent(getApplicationContext(), Ingresar.class);
                 startActivity(intent);
             }
-        });
+         });
+
         actualizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Actualizar.class);
                 startActivity(intent);
             }
-        });
+         });
+
         ver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), VerLista.class);
                 startActivity(intent);
             }
-        });
+         });
 
     }
 }

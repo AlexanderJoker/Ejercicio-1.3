@@ -131,19 +131,21 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="30dp"
-        android:layout_height="23dp"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:text="ID"
+        android:textAlignment="center"
         android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
         android:id="@+id/txtids"
-        android:layout_width="95dp"
-        android:layout_height="33dp"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:ems="10"

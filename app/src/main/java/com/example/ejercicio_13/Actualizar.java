@@ -46,7 +46,13 @@ public class Actualizar extends AppCompatActivity {
         actualizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Actualizar();
+                if(!nombres.getText().toString().isEmpty() && !apellidos.getText().toString().isEmpty() && !edad.getText().toString().isEmpty() && !correo.getText().toString().isEmpty() && !direccion.getText().toString().isEmpty()){
+                    Actualizar();
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Por favor, llenar los espacios vacios" ,Toast.LENGTH_LONG).show();
+
+                }
             }
         });
 
@@ -96,11 +102,10 @@ public class Actualizar extends AppCompatActivity {
     }
 
     private void Actualizar() {
-        SQLiteDatabase db = conexion.getWritableDatabase();
 
+        SQLiteDatabase db = conexion.getWritableDatabase();
         String[] params = {id.getText().toString()};
         ContentValues valores = new ContentValues();
-
         valores.put(Transacciones.nombres, nombres.getText().toString());
         valores.put(Transacciones.apellidos, apellidos.getText().toString());
         valores.put(Transacciones.edad, edad.getText().toString());
